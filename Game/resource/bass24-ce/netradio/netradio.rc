@@ -1,0 +1,28 @@
+#include "windows.h"
+
+1000 DIALOG  0, 0, 160, 150
+STYLE WS_VISIBLE
+CAPTION "BASS internet radio"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Broadband",-1,11,14,36,8
+    LTEXT           "Modem",-1,11,30,24,8
+    PUSHBUTTON      "1",10,54,11,16,14
+    PUSHBUTTON      "1",11,54,27,16,14
+    PUSHBUTTON      "2",12,74,11,16,14
+    PUSHBUTTON      "2",13,74,27,16,14
+    PUSHBUTTON      "3",14,94,11,16,14
+    PUSHBUTTON      "3",15,94,27,16,14
+    PUSHBUTTON      "4",16,114,11,16,14
+    PUSHBUTTON      "4",17,114,27,16,14
+    PUSHBUTTON      "5",18,134,11,16,14
+    PUSHBUTTON      "5",19,134,27,16,14
+    EDITTEXT        20,10,58,110,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "open",21,125,58,25,12
+    CTEXT           "",30,10,89,140,16,SS_NOPREFIX
+    CTEXT           "not playing",31,10,110,140,16,SS_NOPREFIX
+    CTEXT           "",32,10,131,140,8,SS_NOPREFIX
+    GROUPBOX        "Presets",-1,5,2,150,43
+    GROUPBOX        "Custom",-1,5,48,150,28
+    GROUPBOX        "Currently playing",-1,5,79,150,66
+END

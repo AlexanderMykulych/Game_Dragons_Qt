@@ -1,0 +1,15 @@
+#include "windows.h"
+
+1000 DIALOG DISCARDABLE  0, 0, 160, 100
+STYLE WS_VISIBLE
+CAPTION "BASS simple DSP test"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "click here to open a file...",10,5,5,150,14
+    CONTROL         "rotate",11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,40,40,
+                    50,10
+    CONTROL         "echo",12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,40,58,50,
+                    10
+    CONTROL         "flanger",13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,40,
+                    76,50,10
+END

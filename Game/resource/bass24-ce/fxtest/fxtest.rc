@@ -1,0 +1,18 @@
+#include <windows.h>
+#include <commctrl.h>
+
+1000 DIALOG  0, 0, 160, 142
+STYLE DS_SETFONT | WS_VISIBLE | WS_CAPTION
+CAPTION "BASS effect test"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "click here to open a file...",10,5,5,150,14
+    CONTROL         "",20,"msctls_trackbar32",TBS_VERT | TBS_BOTH | WS_TABSTOP,30,28,30,70
+    CONTROL         "",21,"msctls_trackbar32",TBS_VERT | TBS_BOTH | WS_TABSTOP,65,28,30,70
+    CONTROL         "",22,"msctls_trackbar32",TBS_VERT | TBS_BOTH | WS_TABSTOP,100,28,30,70
+    CTEXT           "125 hz",-1,30,99,30,8
+    CTEXT           "1 khz",-1,65,99,30,8
+    CTEXT           "8 khz",-1,100,99,30,8
+    CONTROL         "",23,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,30,114,100,15
+    CTEXT           "reverb",-1,65,130,30,8
+END

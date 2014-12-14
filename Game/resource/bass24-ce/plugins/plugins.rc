@@ -1,0 +1,16 @@
+#include "windows.h"
+#include "commctrl.h"
+
+1000 DIALOG  0, 0, 160, 130
+STYLE WS_VISIBLE
+CAPTION "BASS plugin test"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "click here to open a file...",10,5,67,150,14
+    LISTBOX         20,10,13,140,43,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_NOSEL | WS_VSCROLL
+    GROUPBOX        "Loaded plugins",-1,5,3,150,59
+    CTEXT           "",11,5,85,150,30
+    CONTROL         "Slider1",12,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | 
+                    WS_TABSTOP,10,115,140,15
+END

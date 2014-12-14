@@ -1,0 +1,14 @@
+#include "windows.h"
+
+1000 DIALOG DISCARDABLE  0, 0, 160, 150
+STYLE WS_VISIBLE
+CAPTION "BASS recording test"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Record",10,20,10,60,13
+    PUSHBUTTON      "Play",11,90,10,50,13,WS_DISABLED
+    LTEXT           "Position:",-1,20,35,45,8
+    LTEXT           "",20,65,35,85,12
+    LTEXT           "Free space:",-1,20,50,45,8
+    LTEXT           "",21,65,50,85,12
+END
